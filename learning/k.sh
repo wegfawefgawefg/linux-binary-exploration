@@ -9,6 +9,7 @@ commands=(
     "file $file_path"
     "xxd $file_path"
     # readelf for -h -S s r x
+    "readelf -d $file_path"
     "readelf -h $file_path"
     "readelf -S $file_path"
     "readelf -s $file_path"
@@ -21,13 +22,23 @@ commands=(
 )
 
 # Loop through the commands
+# make a folder to put the outputs in
+mkdir -p outputs
 for cmd in "${commands[@]}"; do
     sanitized_cmd=$(echo "$cmd" | tr -dc '[:alnum:]._-' | tr ' ' '_')
+
     output_file="$sanitized_cmd.txt"
+    output_file="outputs/$output_file"
+
     echo "Running command: $cmd"
     echo "Output file: $output_file"
     touch "$output_file"
-    eval "$cmd" > "$output_file"
+
+    echo "output of command: $cmd" >> "$output_file"
+    echo "---------------------------------------" >> "$output_file"
+    echo "" >> "$output_file"
+    eval "$cmd" >> "$output_file"
+    
 
     echo "---------------------------------------"
 done

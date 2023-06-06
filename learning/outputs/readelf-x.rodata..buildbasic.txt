@@ -1,0 +1,14 @@
+output of command: readelf -x .rodata ../build/basic
+---------------------------------------
+
+
+Hex dump of section '.rodata':
+  0x00002000 01000200 256400                     ....%d.
+
+output of command: readelf -x .rodata ../build/basic
+---------------------------------------
+
+
+Hex dump of section '.rodata':
+  0x00002000 01000200 256400                     ....%d.
+
