@@ -25,7 +25,13 @@ The output binary will be `build/basic`.
 
 ## Explore The Binary (What I Ran)
 
-`learning/k.sh` is a convenience wrapper that captures the output of:
+`./explore.sh` is a convenience wrapper that:
+
+- builds `build/basic` (via CMake)
+- runs common inspection commands
+- captures outputs under `learning/outputs/`
+
+It captures the output of:
 
 - `strings`
 - `file`
@@ -33,14 +39,15 @@ The output binary will be `build/basic`.
 - `readelf -d -h -S -s -r -x .rodata`
 - `objdump -d -t -x`
 
-Run it from the `learning/` directory (the script assumes `../build/basic`):
+Run it from the repo root:
 
 ```bash
-cd learning
-./k.sh
+./explore.sh
 ```
 
 Outputs are written under `learning/outputs/`.
+
+`learning/k.sh` is kept as a deprecated wrapper for backwards compatibility.
 
 ## Notes
 
