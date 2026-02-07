@@ -45,7 +45,7 @@ Run it from the repo root:
 ./explore.sh
 ```
 
-Outputs are written under `learning/outputs/`.
+Outputs are written under `learning/outputs/` and overwritten each run.
 
 `learning/k.sh` is kept as a deprecated wrapper for backwards compatibility.
 
