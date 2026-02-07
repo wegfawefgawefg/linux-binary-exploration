@@ -7,6 +7,7 @@ Tiny C executable + notes/scripts for learning how Linux ELF binaries look on di
 - `src/basic.c`: a small C program meant to be easy to inspect (symbols, rodata, disassembly, relocations, etc).
 - `CMakeLists.txt`: builds `basic` into `build/basic`.
 - `explore.sh`: builds the binary and captures common inspection command output into `learning/outputs/`.
+- `explain/`: short walkthroughs for what each output file means and what to look for.
 
 ## Build
 
