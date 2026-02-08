@@ -2,6 +2,10 @@
 
 Tiny C executable + notes/scripts for learning how Linux ELF binaries look on disk.
 
+## Screenshot
+
+![Screenshot](screenshot.jpg)
+
 ## What This Repo Contains
 
 - `src/basic.c`: a small C program meant to be easy to inspect (symbols, rodata, disassembly, relocations, etc).
