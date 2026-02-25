@@ -26,3 +26,7 @@ Reading order (recommended):
 
 Each output file begins with the exact command used to generate it.
 
+Optional after core path:
+
+- `11-objdump-x.md` as a one-page "all-in-one summary view" reference.
+- `objdump -t` cross-check notes are included inside `06-readelf-s.md`.

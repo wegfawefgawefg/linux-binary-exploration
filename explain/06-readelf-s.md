@@ -25,3 +25,8 @@ Connection to disassembly:
 - The address of `add` here matches the label in `objdump-d.txt` (example: `<add>`).
 - A RIP-relative load in `objdump` that references `<POTATO>` is exactly your code touching that global.
 
+Optional fast cross-check (`objdump -t`):
+
+- If you generated `learning/outputs/objdump-t.txt`, use it as a quick symbol scan.
+- It should show the same core symbols (`main`, `add`, `POTATO`) at matching addresses.
+- Prefer `readelf -s` when you want richer ELF metadata (`Bind`, `Type`, `Ndx`); use `objdump -t` for a compact sanity pass.

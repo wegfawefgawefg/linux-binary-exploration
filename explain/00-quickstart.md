@@ -19,3 +19,6 @@ Suggested "find it in the dumps" exercises:
 - Find the `%d` format string bytes in `readelf-x-.rodata.txt`.
 - Find the `POTATO` global in `readelf-s.txt` and see how it is referenced in `objdump-d.txt`.
 
+Optional extra:
+
+- Open `objdump-x.txt` for a single-file summary view, then cross-check one dynamic/relocation detail in `readelf-d.txt` or `readelf-r.txt`.
